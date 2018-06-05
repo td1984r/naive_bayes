@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bayes - Singidunum</title>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+  </head>
+  <body ng-app="myApp" ng-controller="MyCtrl as vm">
+
+    <div class="container">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Naive Bayes - primer 1
+        </div>
+		<form method="POST" action="/send">
+			<div class="panel-body">
+				Vrednost kredita <input type="number" container="Vrednost kredita" name="loan_amnt"> <br />
+				Godisnji prihod <input type="number" container="Godisnji prihod" name="annual_inc"> <br />
+				Godine radnog staza <input type="number" container="Godine radnog staza" name="emp_length_years"> <br />
+				<button class="btn btn-primary" type="submit" value="submit">Posalji</button>
+
+			</div>
+      </div>
+    </div>
+    
+    
+    
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+
+  </body>
+</html>
